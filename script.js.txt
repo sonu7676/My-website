@@ -1,0 +1,30 @@
+// Wait until page loads
+document.addEventListener("DOMContentLoaded", () => {
+  
+  // Smooth scroll for "Register Now" button
+  const buttons = document.querySelectorAll('a[href^="#"]');
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      // Only smooth scroll for internal links (#)
+      if (this.getAttribute("href").startsWith("#")) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 50,
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  });
+
+  // Alert when "Go to Registration Form" button is clicked
+  const regButton = document.querySelector('#register .btn');
+  if (regButton) {
+    regButton.addEventListener("click", () => {
+      alert("You are being redirected to the Registration Form!");
+    });
+  }
+});

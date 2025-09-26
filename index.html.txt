@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Annual Tech Innovation Event 2025</h1>
+    <p>Join us for a day of learning, networking, and innovation!</p>
+    <a href="#register" class="btn">Register Now</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About the Event</h2>
+    <p>
+      The Annual Tech Innovation Event brings together entrepreneurs, developers,
+      and innovators to showcase cutting-edge technology and ideas.
+    </p>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register">
+    <h2>Register for the Event</h2>
+    <p>Click the button below to register and secure your spot!</p>
+    <a href="https://forms.gle/example" target="_blank" class="btn">Go to Registration Form</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tech Event. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
